@@ -1,24 +1,73 @@
+<!DOCTYPE html>
 <html>
-  <head>
-    <title>Men Product</title>
-  </head>
-  <body>
-    <div class="card">
-      <img src="https://images.unsplash.com/photo-1521572267360-ee0c2909d518">
-      <div class="card-content">
-        <h3>Street T-Shirt</h3>
-        <div class="price">₹1,199</div>
-        <button onclick="buyNow('Street T-Shirt')">Buy Now</button>
-      </div>
+
+<head>
+    <title>t-shirt</title>
+</head>
+<style>
+    * {
+        margin: 0;
+        padding: 0;
+    }
+
+    .order-block {
+        display: flex;
+        justify-content: center;
+        gap: 0px;
+        padding: 20px;
+    }
+
+    .box {
+        border: 2px solid gray;
+        border-radius: 20px;
+        margin: 0px;
+        border-spacing: 0px;
+        width: 100%;
+        height: 650px;
+    }
+
+    .order-block img {
+        width: 100%;
+        height: 500px;
+        margin: 0px;
+        border-radius: 20px 20px 0px 0px;
+        gap: 0px;
+        object-fit: cover;
+    }
+    .text {
+        padding: 20px;
+        text-align: left;
+    }
+
+    .box button {
+        background-color: black;
+        color: white;
+        border: none;
+        padding: 10px 20px;
+        border-radius: 5px;
+        cursor: pointer;
+    }
+</style>
+
+<body>
+    <div class="order-block" id="order block">
+        <div class="box">
+            <img src="https://images.unsplash.com/photo-1515886657613-9f3515b0c78f">
+            <div id="text" class="text">
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas, voluptate.</p>
+                <h1>₹100</h1>
+                <button>Buy Now</button>
+            </div>
+        </div>
+        <div class="box">
+            <img src="https://images.unsplash.com/photo-1515886657613-9f3515b0c78f">
+            <div id="text" class="text">
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas, voluptate.</p>
+                <h1>₹100</h1>
+                <button>Buy Now</button>
+            </div>
+        </div>
     </div>
-    <div class="card">
-      <img src="https://images.unsplash.com/photo-1521572267360-ee0c2909d518">
-      <div class="card-content">
-        <h3>Street T-Shirt</h3>
-        <div class="price">₹1,199</div>
-        <button onclick="buyNow('Street T-Shirt')">Buy Now</button>
-      </div>
-    </div>
-    
-  </body>
+</body>
+
 </html>
