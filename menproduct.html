@@ -10,6 +10,46 @@
         padding: 0;
     }
 
+/* Header */
+header {
+    background: rgba(0, 0, 0, 0.8);
+    padding: 20px 8%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    backdrop-filter: blur(10px);
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+}
+
+.logo {
+    font-size: 28px;
+    font-weight: bold;
+    color: #ffd700;
+    letter-spacing: 2px;
+    display: block;
+}
+
+nav a {
+    color: #fff;
+    text-decoration: none;
+    margin-left: 25px;
+    transition: 0.3s;
+    font-size: 17px;
+    display: inline-flex;
+}
+
+nav a:hover {
+    color: #ffd700;
+}
+
+    
     .order-block {
         display: flex;
         justify-content: center;
@@ -48,8 +88,18 @@
         cursor: pointer;
     }
 </style>
-
 <body>
+    <header class="header">
+        <div class="logo">KHANA GARMENTS</div>
+        <nav>
+            <a href="#Home">Home</a>
+            <a href="#Men" onclick="scrollToMenProducts()">Men</a>
+            <a href="#Women" onclick="scrollToWomenProducts()">Women</a>
+            <a href="#Kids" onclick="scrollToKidsProducts()">Kids</a>
+            <a href="#Contact" onclick="">Contact</a>
+        </nav>
+    </header>
+    
     <div class="order-block" id="order block">
         <div class="box">
             <img src="https://images.unsplash.com/photo-1515886657613-9f3515b0c78f">
