@@ -1,30 +1,21 @@
-function buyNow(product){
-    alert(product + " selected for purchase!");
-}
-
-function scrollToMenProducts(){
+function scrollToMenProducts() {
     document.getElementById("Men products").scrollIntoView({
-        behavior:"smooth"
+        behavior: "smooth"
     });
 }
 
-function scrollToWomenProducts(){
+function scrollToWomenProducts() {
     document.getElementById("Women products").scrollIntoView({
-        behavior:"smooth"
+        behavior: "smooth"
     });
 }
 
-function scrollToKidsProducts(){
+function scrollToKidsProducts() {
     document.getElementById("Kids products").scrollIntoView({
-        behavior:"smooth"
+        behavior: "smooth"
     });
 }
 
-function scrollTofooter(){
-    document.getElementById("footer").scrollIntoView({
-        behavior:"smooth"
-    });
-}
 
 class LuxeuraApp {
     constructor() {
