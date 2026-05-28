@@ -9,40 +9,39 @@
         margin: 0;
         padding: 0;
     }
+    /* Header */
+    .header{
+        background:rgba(0,0,0,0.8);
+        padding:20px 8%;
+        display:flex;
+        justify-content:space-between;
+        align-items:center;
+        position:sticky;
+        top:0;
+        z-index:1000;
+        backdrop-filter: blur(10px);
+    }
 
-/* Header */
-.header {
-    background: rgba(0, 0, 0, 0.8);
-    padding: 10px 8%;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    position: sticky;
-    top: 0;
-    z-index: 1000;
-    backdrop-filter: blur(10px);
-}
+    .logo{
+        font-size:28px;
+        font-weight:bold;
+        color:#ffd700;
+        letter-spacing:2px;
+        display: block;
+    }
 
-.logo {
-    font-size: 28px;
-    font-weight: bold;
-    color: #ffd700;
-    letter-spacing: 2px;
-    display: block;
-}
+    nav a{
+        color:#fff;
+        text-decoration:none;
+        margin-left:25px;
+        transition:0.3s;
+        font-size:17px;
+        display: inline-flex;
+    }
 
-nav a {
-    color: #fff;
-    text-decoration: none;
-    margin-left: 25px;
-    transition: 0.3s;
-    font-size: 17px;
-    display: inline-flex;
-}
-
-nav a:hover {
-    color: #ffd700;
-}
+    nav a:hover{
+        color:#ffd700;
+    }
 
     
     .order-block {
