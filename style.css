@@ -107,7 +107,7 @@ body {
 }
 
 /* Header */
-header{
+.header{
     background:rgba(0,0,0,0.8);
     padding:20px 8%;
     display:flex;
@@ -119,10 +119,6 @@ header{
     backdrop-filter: blur(10px);
 }
 
-.header{
-    display: flex;
-    justify-content: space-between;
-}
 .logo{
     font-size:28px;
     font-weight:bold;
