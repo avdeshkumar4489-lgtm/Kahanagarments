@@ -1,14 +1,8 @@
-*{
-    margin:0;
-    padding:0;
-    box-sizing:border-box;
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
     font-family: 'Segoe UI', sans-serif;
-}
-
-body{
-    background:#0f0f0f;
-    color:#fff;
-    overflow-x:hidden;
 }
 
 :root {
@@ -107,100 +101,119 @@ body {
 }
 
 /* Header */
-.header{
-    background:rgba(0,0,0,0.8);
-    padding:20px 8%;
-    display:flex;
-    justify-content:space-between;
-    align-items:center;
-    position:sticky;
-    top:0;
-    z-index:1000;
+.header {
+    background: rgba(0, 0, 0, 0.8);
+    padding: 20px 8%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
     backdrop-filter: blur(10px);
 }
 
-.logo{
-    font-size:28px;
-    font-weight:bold;
-    color:#ffd700;
-    letter-spacing:2px;
+.logo {
+    font-size: 28px;
+    font-weight: bold;
+    color: #ffd700;
+    letter-spacing: 2px;
     display: block;
 }
 
-nav a{
-    color:#fff;
-    text-decoration:none;
-    margin-left:25px;
-    transition:0.3s;
-    font-size:17px;
+nav a {
+    color: #fff;
+    text-decoration: none;
+    margin-left: 25px;
+    transition: 0.3s;
+    font-size: 17px;
     display: inline-flex;
 }
 
-nav a:hover{
-    color:#ffd700;
+nav a:hover {
+    color: #ffd700;
 }
 
 /* Hero */
-.hero{
-    height:1000px;
-    background:linear-gradient(rgba(0,0,0,.6),rgba(0,0,0,.8)),
-    url('https://images.unsplash.com/photo-1515886657613-9f3515b0c78f?auto=format&fit=crop&w=1400&q=80') center/cover;
-    display:flex;
-    justify-content:center;
-    align-items:center;
-    text-align:center;
-    flex-direction:column;
-    animation:zoomBg 10s infinite alternate;
+.hero {
+    height: 100vh;
+    background: linear-gradient(rgba(0, 0, 0, .6), rgba(0, 0, 0, .8)),
+        url('https://images.unsplash.com/photo-1515886657613-9f3515b0c78f?auto=format&fit=crop&w=1400&q=80') center/cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    flex-direction: column;
+    animation: zoomBg 10s infinite alternate;
 }
 
-@keyframes zoomBg{
-    from{background-size:100%;}
-    to{background-size:110%;}
+@keyframes zoomBg {
+    from {
+        background-size: 100%;
+    }
+
+    to {
+        background-size: 110%;
+    }
 }
 
-.hero h1{
-    font-size:65px;
-    color:#ffd700;
-    animation:fadeDown 1.2s ease;
+.hero h1 {
+    font-size: 65px;
+    color: #ffd700;
+    animation: fadeDown 1.2s ease;
 }
 
-.hero p{
-    margin-top:15px;
-    font-size:22px;
-    color:#ddd;
-    animation:fadeUp 1.5s ease;
+.hero p {
+    margin-top: 15px;
+    font-size: 22px;
+    color: #ddd;
+    animation: fadeUp 1.5s ease;
 }
 
-.hero button{
-    margin-top:30px;
-    padding:15px 35px;
-    border:none;
-    background:#ffd700;
-    color:#000;
-    font-size:18px;
-    cursor:pointer;
-    border-radius:30px;
-    transition:0.3s;
+.hero button {
+    margin-top: 30px;
+    padding: 15px 35px;
+    border: none;
+    background: #ffd700;
+    color: #000;
+    font-size: 18px;
+    cursor: pointer;
+    border-radius: 30px;
+    transition: 0.3s;
 }
 
-.hero button:hover{
-    transform:scale(1.08);
-    background:#fff;
+.hero button:hover {
+    transform: scale(1.08);
+    background: #fff;
 }
 
-@keyframes fadeDown{
-    from{opacity:0; transform:translateY(-50px);}
-    to{opacity:1; transform:translateY(0);}
+@keyframes fadeDown {
+    from {
+        opacity: 0;
+        transform: translateY(-50px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
 }
 
-@keyframes fadeUp{
-    from{opacity:0; transform:translateY(50px);}
-    to{opacity:1; transform:translateY(0);}
+@keyframes fadeUp {
+    from {
+        opacity: 0;
+        transform: translateY(50px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
 }
 
 /* Products */
 .products {
-    padding: 15px;
+    padding: 9px;
 }
 
 .title {
@@ -215,7 +228,6 @@ nav a:hover{
     display: flex;
     width: 100%;
     gap: 10px;
-    padding: 0px 60px 0px 60px;
 }
 
 .card {
@@ -226,6 +238,7 @@ nav a:hover{
     transition: 0.4s;
     box-shadow: 0 10px 20px rgba(0, 0, 0, .5);
     margin-top: 30px;
+    margin-bottom: 30px;
     width: 25%;
 }
 
